@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300&family=Train+One&display=swap');
+h1 {
+    letter-spacing: 0.025em;
+}
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 400; 
+}
+
+.mywork {
+    font-family: 'Poppins', sans-serif;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: 200; 
+}
+
+.intro {
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.blog-post{
+    position: relative;
+    
+}
+
+.blog-post img {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.ustboslukblog {
+    margin-top: 70px;
+}
+.blog-post p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+}
+.container {
+    max-width: 1200px !important;
+}
+.dot {
+    position: relative;
+    height: 220px;
+    width: 220px;
+    background-color: #fa511e;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.1;
+    z-index: 1;
+    margin-top: -390px;
+}
+@media only screen and (min-width:1200px){ /*XL*/
+    .navLOGO {
+     display: none;
+    }
+ }
+ @media only screen and (min-width:992px)  and (max-width:1199px){ /*L*/
+   .navLOGO {
+     display: none;
+    }
+ }
+ 
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #73787c;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: #73787c
+}
+
+
+.eduexp {
+    position: relative;
+}
+
+.eduexp::before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #DCDFE5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.eduexp::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #DCDFE5;
+    position: absolute;
+    left: -7px;
+    top: 0;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width:991px) {
+    .eduexp::after, .eduexp::before {
+        display: none;
+    }
+}
+
+
+@media only screen and  (max-width:991px){ /*M*/
+   .head {
+    padding: 48px;
+   }
+}
+.information {
+    background-color: #38D376;
+    border-radius: 25px;
+   
+}
+.email {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 62px;
+    
+}
+
+@media only screen and  (max-width:991px){ /*M*/
+    .mail {
+        display: block;
+        margin-left: 5px;
+        margin-right: auto;
+        margin-top: 1px;
+        margin-bottom: auto;
+        position: relative;
+        bottom: 45px;
+    }
+}
+.abouttext {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+
+}
+
+.btn {
+    padding: 12px 27px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid
+}
+
+.btn-brand {
+    background-color: #f5f5f5;
+    color: #000000;
+    border-color: #f5f5f5;
+}
+
+@media only screen and  (max-width:991px){ /*M*/
+    .footernav {
+        justify-content: center;
+    }
+ }
+
+
+@media only screen and (max-width:991px){ /*M*/
+    .name {
+       display: none;
+    }
+    .nametwo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1200px){ /*XL*/
+    #mobilportfolio {
+        display: none;
+    }
+}
+@media only screen and (min-width:992px)  and (max-width:1199px){ /*L*/
+    #mobilportfolio {
+        display: none;
+    }
+}
+
+
+@media only screen and  (max-width:991px){ /*M*/
+   #lgportfolio {
+    display: none;
+   }
+}
+
+@media only screen and (min-width:1200px){ /*XL*/
+  .logo {
+    display: none;
+  }
+}
+@media only screen and (min-width:992px)  and (max-width:1199px){ /*L*/
+    .logo {
+        display: none;
+      }
+}
+@media only screen and (min-width:768px) and (max-width:991px){ /*M*/
+    .logo {
+        position: fixed;
+       top: 0;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px){ /*S*/
+    .logo {
+     position: fixed;
+     top: 0;
+
+    }
+}
+@media only screen and (max-width:574px){ /*XS*/
+    .logo {
+      position: fixed;
+      top: 0;
+     }
+}
+
+@media only screen and (min-width:1200px){ /*XL*/
+    .logoimg {
+      display: none;
+    }
+  }
+  @media only screen and (min-width:992px)  and (max-width:1199px){ /*L*/
+      .logoimg {
+          display: none;
+        }
+  }
+  @media only screen and (min-width:768px) and (max-width:991px){ /*M*/
+    .logoimg {
+        position: fixed;
+        float: right;
+        right: 50px;
+        top: 18px;
+    }
+  }
+  @media only screen and (min-width:576px) and (max-width:767px){ /*S*/
+      .logoimg {
+        position: fixed;
+        float: right;
+        right: 50px;
+        top: 18px;
+       }
+  }
+  @media only screen and (max-width:574px){ /*XS*/
+    .logoimg {
+    position: fixed;
+    float: right;
+    right: 50px;
+    top: 18px;
+  }
+}
